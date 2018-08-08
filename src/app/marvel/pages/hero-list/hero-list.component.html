@@ -1,0 +1,7 @@
+<mat-spinner *ngIf="loading"></mat-spinner>
+<mat-list>
+  <mat-list-item *ngFor="let hero of heroes">
+    <app-hero-thumbnail [hero]="hero"></app-hero-thumbnail>
+    <h4>{{hero.name}}</h4>
+  </mat-list-item>
+</mat-list>
